@@ -1,5 +1,3 @@
-package model;
-
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -7,6 +5,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import model.*;
 
 public class Report {
 
