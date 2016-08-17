@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rename this file to persistence.xml after filling in the user/pass -->
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="NorthwoodsJPA" transaction-type="RESOURCE_LOCAL">
+		<class>model.Course</class>
+		<class>model.CourseSection</class>
+		<class>model.Enrollment</class>
+		<class>model.Faculty</class>
+		<class>model.Location</class>
+		<class>model.Student</class>
+		<class>model.Term</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby://home.steelcomputers.com:18018/preCapstone"/>
+			<property name="javax.persistence.jdbc.user" value="username here"/>
+			<property name="javax.persistence.jdbc.password" value="password here"/>
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
+<!-- Rename this file to persistence.xml after filling in the user/pass -->
